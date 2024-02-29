@@ -86,6 +86,8 @@ codepoints:
   currency_cent:   "¢"
   currency_sign:   "¤"
   currency_crypto: "₿"
+  micro:           "µ"
+  szlig:           "ß"
 
 localizing:
   #

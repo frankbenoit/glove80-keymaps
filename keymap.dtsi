@@ -1,6 +1,6 @@
 // NOTE: Use the `#define` settings below to customize this keymap!
 // For example, here are the main optional features you can enable:
-#define DIFFICULTY_LEVEL  0 // 0:custom, 1:easy -> 5:hard (see below)
+#define DIFFICULTY_LEVEL  3 // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL   // cancels single-handed home row mod+tap
 // TIP: Add more setting overrides here instead of editing them below.
 
@@ -39,9 +39,9 @@
 // - https://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts
 //
 #ifndef OPERATING_SYSTEM
-#define OPERATING_SYSTEM 'L' // linux
+//#define OPERATING_SYSTEM 'L' // linux
 //#define OPERATING_SYSTEM 'M' // macos
-//#define OPERATING_SYSTEM 'W' // windows
+#define OPERATING_SYSTEM 'W' // windows
 #endif
 #if OPERATING_SYSTEM == 'M'
     #define _C      LG
@@ -217,13 +217,13 @@
 #define KEY_RH_C4R4 S
 #define KEY_RH_C5R4 N
 #define KEY_RH_C6R4 Q
-#define KEY_LH_C6R5 LSHFT
+#define KEY_LH_C6R5 ESC
 #define KEY_LH_C5R5 G
 #define KEY_LH_C4R5 X
 #define KEY_LH_C3R5 J
 #define KEY_LH_C2R5 K
 #define KEY_LH_C1R5 MINUS
-#define KEY_LH_T1 ESC
+#define KEY_LH_T1 0
 #define KEY_LH_T2 LEFT
 #define KEY_LH_T3 DOWN
 #define KEY_RH_T3 UP
@@ -239,7 +239,7 @@
 #define KEY_LH_C5R6 HOME
 #define KEY_LH_C4R6 PG_UP
 #define KEY_LH_C3R6 PG_DN
-#define KEY_LH_C2R6 END
+#define KEY_LH_C2R6 0
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
 #define KEY_LH_T6 LSFT
@@ -4400,7 +4400,7 @@ macros {
     //
     #ifndef UNICODE_SEQ_WINDOWS
     #define UNICODE_SEQ_WINDOWS(keystrokes) \
-        <&macro_tap &kp RA(U) keystrokes &kp ENTER>
+        <&macro_press &kp RALT>, <&macro_tap &kp KP_PLUS keystrokes>, <&macro_release &kp RALT>
     #endif
 
     //
@@ -4537,6 +4537,24 @@ macros {
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
         UNICODE_SEQ_WINDOWS(&kp A &kp N4)
+      #endif
+    )
+    UNICODE(world_micro, /* µ */
+      #if UNICODE_TARGET_OS == 'L'
+        UNICODE_SEQ_LINUX(&kp B &kp N5)
+      #elif UNICODE_TARGET_OS == 'M'
+        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp N5)
+      #elif UNICODE_TARGET_OS == 'W'
+        UNICODE_SEQ_WINDOWS(&kp B &kp N5)
+      #endif
+    )
+    UNICODE(world_szlig, /* ß */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp S &kp S)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(S))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3)
       #endif
     )
 
