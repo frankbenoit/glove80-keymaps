@@ -4694,7 +4694,7 @@ macros {
     //
     #ifndef UNICODE_SEQ_WINDOWS
     #define UNICODE_SEQ_WINDOWS(keystrokes) \
-        <&macro_tap &kp RA(U) keystrokes &kp ENTER>
+        <&macro_tap &kp RALT &kp U keystrokes &kp ENTER>
     #endif
 
     //
@@ -4749,7 +4749,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp B &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp N0)
       #endif
     )
     UNICODE(world_section_sign, /* § */
@@ -4758,7 +4758,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N7)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N7)
       #endif
     )
     UNICODE(world_paragraph_sign, /* ¶ */
@@ -4767,7 +4767,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp B &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp N6)
       #endif
     )
     UNICODE(world_o_ordinal, /* º */
@@ -4776,7 +4776,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp B &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp A)
       #endif
     )
     UNICODE(world_a_ordinal, /* ª */
@@ -4785,7 +4785,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp A)
       #endif
     )
     UNICODE(world_exclaim_left, /* ¡ */
@@ -4794,7 +4794,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N1)
       #endif
     )
     UNICODE(world_question_left, /* ¿ */
@@ -4803,7 +4803,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp B &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp F)
       #endif
     )
     UNICODE(world_currency_crypto, /* ₿ */
@@ -4812,7 +4812,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp B &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp B &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp B &kp F)
       #endif
     )
     UNICODE(world_currency_cent, /* ¢ */
@@ -4821,7 +4821,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N2)
       #endif
     )
     UNICODE(world_currency_sign, /* ¤ */
@@ -4830,7 +4830,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N4)
       #endif
     )
     UNICODE(world_micro, /* µ */
@@ -4839,7 +4839,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp B &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp N5)
       #endif
     )
     UNICODE(world_szlig, /* ß */
@@ -4909,7 +4909,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp F)
       #endif
     )
     UNICODE(world_i_diaeresis_upper, /* Ï */
@@ -4918,7 +4918,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp F)
       #endif
     )
     world_i_diaeresis: world_i_diaeresis {
@@ -4933,7 +4933,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp E)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp E)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp E)
       #endif
     )
     UNICODE(world_i_circumflex_upper, /* Î */
@@ -4942,7 +4942,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp E)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp E)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp E)
       #endif
     )
     world_i_circumflex: world_i_circumflex {
@@ -4957,7 +4957,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp C)
       #endif
     )
     UNICODE(world_i_grave_upper, /* Ì */
@@ -4966,7 +4966,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp C)
       #endif
     )
     world_i_grave: world_i_grave {
@@ -4981,7 +4981,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N9)
       #endif
     )
     UNICODE(world_e_acute_upper, /* É */
@@ -4990,7 +4990,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N9)
       #endif
     )
     world_e_acute: world_e_acute {
@@ -5005,7 +5005,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp B)
       #endif
     )
     UNICODE(world_e_diaeresis_upper, /* Ë */
@@ -5014,7 +5014,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp B)
       #endif
     )
     world_e_diaeresis: world_e_diaeresis {
@@ -5029,7 +5029,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp A)
       #endif
     )
     UNICODE(world_e_circumflex_upper, /* Ê */
@@ -5038,7 +5038,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp A)
       #endif
     )
     world_e_circumflex: world_e_circumflex {
@@ -5053,7 +5053,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N8)
       #endif
     )
     UNICODE(world_e_grave_upper, /* È */
@@ -5062,7 +5062,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N8)
       #endif
     )
     world_e_grave: world_e_grave {
@@ -5077,7 +5077,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N6)
       #endif
     )
     UNICODE(world_e_ae_upper, /* Æ */
@@ -5086,7 +5086,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N6)
       #endif
     )
     world_e_ae: world_e_ae {
@@ -5101,7 +5101,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N1)
       #endif
     )
     UNICODE(world_a_acute_upper, /* Á */
@@ -5110,7 +5110,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N1)
       #endif
     )
     world_a_acute: world_a_acute {
@@ -5149,7 +5149,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N2)
       #endif
     )
     UNICODE(world_a_circumflex_upper, /* Â */
@@ -5158,7 +5158,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N2)
       #endif
     )
     world_a_circumflex: world_a_circumflex {
@@ -5173,7 +5173,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N0)
       #endif
     )
     UNICODE(world_a_grave_upper, /* À */
@@ -5182,7 +5182,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N0)
       #endif
     )
     world_a_grave: world_a_grave {
@@ -5197,7 +5197,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N3)
       #endif
     )
     UNICODE(world_a_tilde_upper, /* Ã */
@@ -5206,7 +5206,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N3)
       #endif
     )
     world_a_tilde: world_a_tilde {
@@ -5221,7 +5221,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp E &kp N5)
       #endif
     )
     UNICODE(world_a_ring_upper, /* Å */
@@ -5230,7 +5230,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp C &kp N5)
       #endif
     )
     world_a_ring: world_a_ring {
@@ -5245,7 +5245,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp D)
       #endif
     )
     UNICODE(world_y_acute_upper, /* Ý */
@@ -5254,7 +5254,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp D)
       #endif
     )
     world_y_acute: world_y_acute {
@@ -5269,7 +5269,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp F)
       #endif
     )
     UNICODE(world_y_diaeresis_upper, /* Ÿ */
@@ -5278,7 +5278,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N1 &kp N7 &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp N7 &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp N7 &kp N8)
       #endif
     )
     world_y_diaeresis: world_y_diaeresis {
@@ -5293,7 +5293,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp N3)
       #endif
     )
     UNICODE(world_o_acute_upper, /* Ó */
@@ -5302,7 +5302,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp N3)
       #endif
     )
     world_o_acute: world_o_acute {
@@ -5341,7 +5341,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp N4)
       #endif
     )
     UNICODE(world_o_circumflex_upper, /* Ô */
@@ -5350,7 +5350,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp N4)
       #endif
     )
     world_o_circumflex: world_o_circumflex {
@@ -5365,7 +5365,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp N2)
       #endif
     )
     UNICODE(world_o_grave_upper, /* Ò */
@@ -5374,7 +5374,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp N2)
       #endif
     )
     world_o_grave: world_o_grave {
@@ -5389,7 +5389,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp N5)
       #endif
     )
     UNICODE(world_o_tilde_upper, /* Õ */
@@ -5398,7 +5398,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp N5)
       #endif
     )
     world_o_tilde: world_o_tilde {
@@ -5413,7 +5413,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp N8)
       #endif
     )
     UNICODE(world_o_slash_upper, /* Ø */
@@ -5422,7 +5422,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp N8)
       #endif
     )
     world_o_slash: world_o_slash {
@@ -5437,7 +5437,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp A)
       #endif
     )
     UNICODE(world_u_acute_upper, /* Ú */
@@ -5446,7 +5446,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp A)
       #endif
     )
     world_u_acute: world_u_acute {
@@ -5485,7 +5485,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp B)
       #endif
     )
     UNICODE(world_u_circumflex_upper, /* Û */
@@ -5494,7 +5494,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp B)
       #endif
     )
     world_u_circumflex: world_u_circumflex {
@@ -5509,7 +5509,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp N9)
       #endif
     )
     UNICODE(world_u_grave_upper, /* Ù */
@@ -5518,7 +5518,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp N9)
       #endif
     )
     world_u_grave: world_u_grave {
@@ -5533,7 +5533,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp N1)
       #endif
     )
     UNICODE(world_n_tilde_upper, /* Ñ */
@@ -5542,7 +5542,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp D &kp N1)
       #endif
     )
     world_n_tilde: world_n_tilde {
@@ -5557,7 +5557,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N3 &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N3 &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N3 &kp N9)
       #endif
     )
     UNICODE(world_quotes_left_angle_upper, /* « */
@@ -5566,7 +5566,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp B)
       #endif
     )
     world_quotes_left_angle: world_quotes_left_angle {
@@ -5581,7 +5581,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N1 &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N1 &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N1 &kp N8)
       #endif
     )
     UNICODE(world_quotes_left_curly_upper, /* “ */
@@ -5590,7 +5590,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N1 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N1 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N1 &kp C)
       #endif
     )
     world_quotes_left_curly: world_quotes_left_curly {
@@ -5605,7 +5605,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N1 &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N1 &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N1 &kp A)
       #endif
     )
     UNICODE(world_quotes_left_low_upper, /* „ */
@@ -5614,7 +5614,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N1 &kp E)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N1 &kp E)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N1 &kp E)
       #endif
     )
     world_quotes_left_low: world_quotes_left_low {
@@ -5629,7 +5629,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N3 &kp N0 &kp N0 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N3 &kp N0 &kp N0 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N3 &kp N0 &kp N0 &kp C)
       #endif
     )
     UNICODE(world_quotes_left_corner1_upper, /* ﹁ */
@@ -5638,7 +5638,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N4 &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N4 &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N4 &kp N1)
       #endif
     )
     world_quotes_left_corner1: world_quotes_left_corner1 {
@@ -5653,7 +5653,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N3 &kp N0 &kp N0 &kp E)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N3 &kp N0 &kp N0 &kp E)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N3 &kp N0 &kp N0 &kp E)
       #endif
     )
     UNICODE(world_quotes_left_corner2_upper, /* ﹃ */
@@ -5662,7 +5662,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N4 &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N4 &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N4 &kp N3)
       #endif
     )
     world_quotes_left_corner2: world_quotes_left_corner2 {
@@ -5677,7 +5677,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N6 &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N6 &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N6 &kp N0)
       #endif
     )
     UNICODE(world_quotes_right_angle_lower, /* › */
@@ -5686,7 +5686,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N3 &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N3 &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N3 &kp A)
       #endif
     )
     UNICODE(world_quotes_right_angle_upper, /* » */
@@ -5695,7 +5695,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp B &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp B)
       #endif
     )
     world_quotes_right_angle: world_quotes_right_angle {
@@ -5710,7 +5710,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N1 &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N1 &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N1 &kp N9)
       #endif
     )
     UNICODE(world_quotes_right_curly_upper, /* ” */
@@ -5719,7 +5719,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N1 &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N1 &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N1 &kp D)
       #endif
     )
     world_quotes_right_curly: world_quotes_right_curly {
@@ -5740,7 +5740,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N3 &kp N0 &kp N0 &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N3 &kp N0 &kp N0 &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N3 &kp N0 &kp N0 &kp D)
       #endif
     )
     UNICODE(world_quotes_right_corner1_upper, /* ﹂ */
@@ -5749,7 +5749,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N4 &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N4 &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N4 &kp N2)
       #endif
     )
     world_quotes_right_corner1: world_quotes_right_corner1 {
@@ -5764,7 +5764,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N3 &kp N0 &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N3 &kp N0 &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N3 &kp N0 &kp N0 &kp F)
       #endif
     )
     UNICODE(world_quotes_right_corner2_upper, /* ﹄ */
@@ -5773,7 +5773,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N4 &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N4 &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N4 &kp N4)
       #endif
     )
     world_quotes_right_corner2: world_quotes_right_corner2 {
@@ -5788,7 +5788,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp B &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp B &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp B &kp N4)
       #endif
     )
     UNICODE(world_currency_dollar_lower, /* $ */
@@ -5797,7 +5797,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp N2 &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N4)
       #endif
     )
     world_currency_dollar: world_currency_dollar {
@@ -5812,7 +5812,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N5)
       #endif
     )
     UNICODE(world_currency_euro, /* € */
@@ -5830,7 +5830,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp A &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp A &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp A &kp N9)
       #endif
     )
     UNICODE(world_currency_pound, /* £ */
@@ -5839,7 +5839,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp A &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp A &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp A &kp N3)
       #endif
     )
     world_currency_generic: world_currency_generic {
@@ -6123,7 +6123,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N0 &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D)
       #endif
     )
     UNICODE(emoji_male_sign, /* ♂️ */
@@ -6132,7 +6132,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N4 &kp N2), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N6 &kp N4 &kp N2), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N4 &kp N2), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_female_sign, /* ♀️ */
@@ -6141,7 +6141,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N4 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N6 &kp N4 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N4 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_right_arrow, /* ➡️ */
@@ -6150,7 +6150,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp A &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N7 &kp A &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N7 &kp A &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_left_arrow, /* ⬅️ */
@@ -6159,7 +6159,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp B &kp N0 &kp N5), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp B &kp N0 &kp N5), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp B &kp N0 &kp N5), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_rainbow, /* 🌈 */
@@ -6168,7 +6168,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N0 &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N0 &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N0 &kp N8)
       #endif
     )
     UNICODE(emoji_cloudy, /* ️☁️ */
@@ -6177,7 +6177,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N0 &kp N1), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N2 &kp N6 &kp N0 &kp N1), UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N0 &kp N1), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_mostly_cloudy, /* 🌥 */
@@ -6186,7 +6186,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N2 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N2 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N2 &kp N5)
       #endif
     )
     UNICODE(emoji_partly_cloudy, /* ⛅ */
@@ -6195,7 +6195,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp C &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N6 &kp C &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp C &kp N5)
       #endif
     )
     UNICODE(emoji_mostly_sunny, /* ️🌤️ */
@@ -6204,7 +6204,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N2 &kp N4), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N2 &kp N4), UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N2 &kp N4), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_sunny, /* ☀️ */
@@ -6213,7 +6213,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N0 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N6 &kp N0 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N0 &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_sunrise, /* 🌅 */
@@ -6222,7 +6222,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N0 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N0 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N0 &kp N5)
       #endif
     )
     UNICODE(emoji_sunrise_mountains, /* 🌄 */
@@ -6231,7 +6231,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N0 &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N0 &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N0 &kp N4)
       #endif
     )
     UNICODE(emoji_cityscape, /* ️🏙️ */
@@ -6240,7 +6240,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp D &kp N9), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp D &kp N9), UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp D &kp N9), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_cityscape_dusk, /* ️🌇 */
@@ -6249,7 +6249,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N0 &kp N7)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N0 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N0 &kp N7)
       #endif
     )
     UNICODE(emoji_cityscape_night, /* 🌃 */
@@ -6258,7 +6258,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N0 &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N0 &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N0 &kp N3)
       #endif
     )
     UNICODE(emoji_light_skin_tone, /* 🏻 */
@@ -6267,7 +6267,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp F &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp F &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp F &kp B)
       #endif
     )
     UNICODE(emoji_medium_light_skin_tone, /* 🏼 */
@@ -6276,7 +6276,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp F &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp F &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp F &kp C)
       #endif
     )
     UNICODE(emoji_medium_skin_tone, /* 🏽 */
@@ -6285,7 +6285,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp F &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp F &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp F &kp D)
       #endif
     )
     UNICODE(emoji_medium_dark_skin_tone, /* 🏾 */
@@ -6294,7 +6294,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp F &kp E)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp F &kp E)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp F &kp E)
       #endif
     )
     UNICODE(emoji_dark_skin_tone, /* 🏿 */
@@ -6303,7 +6303,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp F &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp F &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp F &kp F)
       #endif
     )
     UNICODE(emoji_baby_bottle, /* 🍼 */
@@ -6312,7 +6312,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N7 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N7 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N7 &kp C)
       #endif
     )
     UNICODE(emoji_baby, /* 👶 */
@@ -6321,7 +6321,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N7 &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N7 &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N7 &kp N6)
       #endif
     )
     UNICODE(emoji_boy, /* 👦 */
@@ -6330,7 +6330,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N6 &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N6 &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N6)
       #endif
     )
     UNICODE(emoji_girl, /* 👧 */
@@ -6339,7 +6339,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N6 &kp N7)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N6 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N7)
       #endif
     )
     UNICODE(emoji_man, /* 👨 */
@@ -6348,7 +6348,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N6 &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N6 &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N8)
       #endif
     )
     UNICODE(emoji_woman, /* 👩 */
@@ -6357,7 +6357,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N6 &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N6 &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N6 &kp N9)
       #endif
     )
     UNICODE(emoji_old_man, /* 👴 */
@@ -6366,7 +6366,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N7 &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N7 &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N7 &kp N4)
       #endif
     )
     UNICODE(emoji_old_woman, /* 👵 */
@@ -6375,7 +6375,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N7 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N7 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N7 &kp N5)
       #endif
     )
     UNICODE(emoji_white_hair, /* 🦳 */
@@ -6384,7 +6384,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp B &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp B &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N3)
       #endif
     )
     UNICODE(emoji_curly_hair, /* 🦱 */
@@ -6393,7 +6393,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp B &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp B &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N1)
       #endif
     )
     UNICODE(emoji_red_hair, /* 🦰 */
@@ -6402,7 +6402,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp B &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp B &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N0)
       #endif
     )
     UNICODE(emoji_bald, /* 🦲 */
@@ -6411,7 +6411,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp B &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp B &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp B &kp N2)
       #endif
     )
     UNICODE(emoji_new_moon, /* 🌑 */
@@ -6420,7 +6420,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N1)
       #endif
     )
     UNICODE(emoji_waxing_crescent_moon, /* 🌒 */
@@ -6429,7 +6429,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N2)
       #endif
     )
     UNICODE(emoji_first_quarter_moon, /* 🌓 */
@@ -6438,7 +6438,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N3)
       #endif
     )
     UNICODE(emoji_waxing_gibbous_moon, /* 🌔 */
@@ -6447,7 +6447,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N4)
       #endif
     )
     UNICODE(emoji_full_moon, /* 🌕 */
@@ -6456,7 +6456,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N5)
       #endif
     )
     UNICODE(emoji_waning_gibbous_moon, /* 🌖 */
@@ -6465,7 +6465,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N6)
       #endif
     )
     UNICODE(emoji_last_quarter_moon, /* 🌗 */
@@ -6474,7 +6474,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N7)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N7)
       #endif
     )
     UNICODE(emoji_waning_crescent_moon, /* 🌘 */
@@ -6483,7 +6483,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N1 &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N1 &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N1 &kp N8)
       #endif
     )
     UNICODE(emoji_tada, /* 🎉 */
@@ -6492,7 +6492,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N3 &kp N8 &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N3 &kp N8 &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N3 &kp N8 &kp N9)
       #endif
     )
     UNICODE(emoji_heart, /* ️❤️ */
@@ -6501,7 +6501,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N6 &kp N4), UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N2 &kp N7 &kp N6 &kp N4), UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N7 &kp N6 &kp N4), UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_fire, /* 🔥 */
@@ -6510,7 +6510,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N5 &kp N2 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N5 &kp N2 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N5 &kp N2 &kp N5)
       #endif
     )
     UNICODE(emoji_muscle, /* 💪 */
@@ -6519,7 +6519,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp A &kp A)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp A &kp A)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp A &kp A)
       #endif
     )
     UNICODE(emoji_person_climbing, /* 🧗 */
@@ -6528,7 +6528,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp D &kp N7)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp D &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp D &kp N7)
       #endif
     )
     UNICODE(emoji_lab_coat, /* 🥼 */
@@ -6537,7 +6537,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp N7 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp N7 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N7 &kp C)
       #endif
     )
     UNICODE(emoji_rocket, /* 🚀 */
@@ -6546,7 +6546,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N8 &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N8 &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N8 &kp N0)
       #endif
     )
     UNICODE(emoji_joy, /* 😂 */
@@ -6555,7 +6555,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N0 &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N0 &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp N2)
       #endif
     )
     UNICODE(emoji_rofl, /* 🤣 */
@@ -6564,7 +6564,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp N2 &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp N2 &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N2 &kp N3)
       #endif
     )
     UNICODE(emoji_star_struck, /* 🤩 */
@@ -6573,7 +6573,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp N2 &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp N2 &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N2 &kp N9)
       #endif
     )
     UNICODE(emoji_love_struck, /* 😍 */
@@ -6582,7 +6582,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N0 &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N0 &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp D)
       #endif
     )
     UNICODE(emoji_saluting_face, /* 🫡 */
@@ -6591,7 +6591,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp A &kp E &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp A &kp E &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp A &kp E &kp N1)
       #endif
     )
     UNICODE(emoji_shocked_face, /* 🤯 */
@@ -6600,7 +6600,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp N2 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp N2 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N2 &kp F)
       #endif
     )
     UNICODE(emoji_cold_sweat, /* 😰 */
@@ -6609,7 +6609,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N3 &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N3 &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N3 &kp N0)
       #endif
     )
     UNICODE(emoji_monocle_face, /* 🧐 */
@@ -6618,7 +6618,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp D &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp D &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp D &kp N0)
       #endif
     )
     UNICODE(emoji_snap_fingers, /* 🫰 */
@@ -6627,7 +6627,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp A &kp F &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp A &kp F &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp A &kp F &kp N0)
       #endif
     )
     UNICODE(emoji_ok_hand, /* 👌 */
@@ -6636,7 +6636,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N4 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N4 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N4 &kp C)
       #endif
     )
     UNICODE(emoji_pray, /* 🙏 */
@@ -6645,7 +6645,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp F)
       #endif
     )
     UNICODE(emoji_sweat_smile, /* 😅 */
@@ -6654,7 +6654,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N0 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N0 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp N5)
       #endif
     )
     UNICODE(emoji_disappointed, /* 😞 */
@@ -6663,7 +6663,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N1 &kp E)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N1 &kp E)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N1 &kp E)
       #endif
     )
     UNICODE(emoji_thinking, /* 🤔 */
@@ -6672,7 +6672,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp N1 &kp N4)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp N1 &kp N4)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N1 &kp N4)
       #endif
     )
     UNICODE(emoji_person_tipping_hand, /* 💁 */
@@ -6681,7 +6681,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N8 &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N8 &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N8 &kp N1)
       #endif
     )
     UNICODE(emoji_person_gesturing_ok, /* 🙆 */
@@ -6690,7 +6690,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp N6)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N6)
       #endif
     )
     UNICODE(emoji_person_bowing, /* 🙇 */
@@ -6699,7 +6699,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp N7)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N7)
       #endif
     )
     UNICODE(emoji_person_raising_hand, /* 🙋 */
@@ -6708,7 +6708,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp B)
       #endif
     )
     UNICODE(emoji_person_gesturing_no, /* 🙅 */
@@ -6717,7 +6717,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N5)
       #endif
     )
     UNICODE(emoji_person_shrugging, /* 🤷 */
@@ -6726,7 +6726,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp N3 &kp N7)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp N3 &kp N7)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N3 &kp N7)
       #endif
     )
     UNICODE(emoji_checkoff, /* ✅ */
@@ -6735,7 +6735,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N0 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N7 &kp N0 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N7 &kp N0 &kp N5)
       #endif
     )
     UNICODE(emoji_100, /* 💯 */
@@ -6744,7 +6744,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp A &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp A &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp A &kp F)
       #endif
     )
     UNICODE(emoji_warning, /* ⚠️ */
@@ -6753,7 +6753,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp A &kp N0), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_x, /* ❌ */
@@ -6762,7 +6762,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N4 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N7 &kp N4 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N7 &kp N4 &kp C)
       #endif
     )
     UNICODE(emoji_question, /* ❓ */
@@ -6771,7 +6771,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N5 &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N7 &kp N5 &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N7 &kp N5 &kp N3)
       #endif
     )
     UNICODE(emoji_astronaut, /* 🧑‍🚀 */
@@ -6780,7 +6780,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp D &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N8 &kp N0)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp D &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N8 &kp N0)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp D &kp N1), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N0 &kp N0 &kp D), UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N8 &kp N0)
       #endif
     )
     UNICODE(emoji_nerd, /* 🤓 */
@@ -6789,7 +6789,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N9 &kp N1 &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N9 &kp N1 &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N9 &kp N1 &kp N3)
       #endif
     )
     UNICODE(emoji_sparkles, /* ✨ */
@@ -6798,7 +6798,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N7 &kp N2 &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N7 &kp N2 &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N7 &kp N2 &kp N8)
       #endif
     )
     UNICODE(emoji_raised_hands, /* 🙌 */
@@ -6807,7 +6807,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp C)
       #endif
     )
     UNICODE(emoji_point_up, /* ☝️ */
@@ -6816,7 +6816,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N2 &kp N6 &kp N1 &kp D), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_MACOS(&kp F &kp E &kp N0 &kp F)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N2 &kp N6 &kp N1 &kp D), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp F &kp E &kp N0 &kp F)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N2 &kp N6 &kp N1 &kp D), <&macro_wait_time UNICODE_SEQ_DELAY>, UNICODE_SEQ_WINDOWS(&kp N0 &kp F &kp E &kp N0 &kp F)
       #endif
     )
     UNICODE(emoji_thumbs_up, /* 👍 */
@@ -6825,7 +6825,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N4 &kp D)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N4 &kp D)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N4 &kp D)
       #endif
     )
 
@@ -6862,7 +6862,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N2)
       #endif
     )
     UNICODE(emoji_face_smile_down, /* 🙃 */
@@ -6871,7 +6871,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N4 &kp N3)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N4 &kp N3)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N4 &kp N3)
       #endif
     )
     emoji_face_smile: emoji_face_smile {
@@ -6898,7 +6898,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N0 &kp N9)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N0 &kp N9)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp N9)
       #endif
     )
     UNICODE(emoji_face_joke_tounge, /* 😜 */
@@ -6907,7 +6907,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N1 &kp C)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N1 &kp C)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N1 &kp C)
       #endif
     )
     emoji_face_joke: emoji_face_joke {
@@ -6922,7 +6922,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N2 &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N2 &kp N8)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N2 &kp N8)
       #endif
     )
     UNICODE(emoji_face_fear_scream, /* 😱 */
@@ -6931,7 +6931,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N3 &kp N1)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N3 &kp N1)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N3 &kp N1)
       #endif
     )
     emoji_face_fear: emoji_face_fear {
@@ -6946,7 +6946,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N3 &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N3 &kp N5)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N3 &kp N5)
       #endif
     )
     emoji_face_surprise: emoji_face_surprise {
@@ -6961,7 +6961,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N4 &kp N4 &kp B)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N4 &kp N4 &kp B)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N4 &kp N4 &kp B)
       #endif
     )
     emoji_gesture_attention: emoji_gesture_attention {
@@ -6976,7 +6976,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N0 &kp E)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N0 &kp E)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N0 &kp E)
       #endif
     )
     emoji_gesture_approval: emoji_gesture_approval {
@@ -7003,7 +7003,7 @@ macros {
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N1 &kp F &kp N6 &kp N2 &kp N2)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp N1 &kp F &kp N6 &kp N2 &kp N2)
+        UNICODE_SEQ_WINDOWS(&kp N0 &kp N1 &kp F &kp N6 &kp N2 &kp N2)
       #endif
     )
     emoji_gesture_despair: emoji_gesture_despair {
@@ -7187,12 +7187,12 @@ macros {
 
         layer_Engrammer {
             bindings = <
-               &kp F1                           &kp F2                           &kp F3                           &kp F4                           &kp F5                                                                                                                                                                                                                                                  &kp F6                            &kp F7                            &kp F8                            &kp F9               &kp F10
-            &kp EQUAL                           &kp N1                           &kp N2                           &kp N3                           &kp N4                     &kp N5                                                                                                                                                                                     &kp N6                            &kp N7                            &kp N8                            &kp N9                            &kp N0              &kp BSLH
-           &caps_word                            &kp B  &LeftRing2 (Y, LAYER_Engrammer)                            &kp O                            &kp U                    &kp SQT                                                                                                                                                                                   &kp SEMI                             &kp L                             &kp D  &RightRing2 (W, LAYER_Engrammer)                             &kp V                 &kp Z
-              &kp ESC  &LeftPinky (C, LAYER_Engrammer)  &LeftRing1 (I, LAYER_Engrammer)  &LeftMiddy (E, LAYER_Engrammer)  &LeftIndex (A, LAYER_Engrammer)  &plain LAYER_Typing COMMA                                                                                                                                                                    &plain LAYER_Typing DOT  &RightIndex (H, LAYER_Engrammer)  &RightMiddy (T, LAYER_Engrammer)  &RightRing1 (S, LAYER_Engrammer)  &RightPinky (N, LAYER_Engrammer)                 &kp Q
-              &kp ESC                            &kp G                            &kp X                            &kp J                            &kp K                  &kp MINUS  &thumb LAYER_Mouse _C(BACKSPACE)                    &kp LEFT  &thumb_lower_shift LAYER_Lower DOWN    &kp UP                 &kp RIGHT  &thumb LAYER_System ENTER                 &kp FSLH                             &kp R                             &kp M                             &kp F                             &kp P                 &none
- &magic LAYER_Magic 0                         &kp HOME                        &kp PG_UP                        &kp PG_DN                          &kp END                                &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE                &thumb LAYER_Function  &kp RALT  &thumb LAYER_Symbol2 TAB  &space LAYER_Symbol SPACE                                         &thumb_parang_left                          &kp LBKT                          &kp RBKT                     &parang_right  &magic LAYER_Magic 0
+               &kp F1                           &kp F2                           &kp F3                           &kp F4                           &kp F5                                                                                                                                                                                                                                                                             &kp F6                            &kp F7                            &kp F8                            &kp F9               &kp F10
+            &kp EQUAL                           &kp N1                           &kp N2                           &kp N3                           &kp N4                     &kp N5                                                                                                                                                                                                                &kp N6                            &kp N7                            &kp N8                            &kp N9                            &kp N0              &kp BSLH
+           &caps_word                            &kp B  &LeftRing2 (Y, LAYER_Engrammer)                            &kp O                            &kp U                    &kp SQT                                                                                                                                                                                                              &kp SEMI                             &kp L                             &kp D  &RightRing2 (W, LAYER_Engrammer)                             &kp V                 &kp Z
+              &kp ESC  &LeftPinky (C, LAYER_Engrammer)  &LeftRing1 (I, LAYER_Engrammer)  &LeftMiddy (E, LAYER_Engrammer)  &LeftIndex (A, LAYER_Engrammer)  &plain LAYER_Typing COMMA                                                                                                                                                                                               &plain LAYER_Typing DOT  &RightIndex (H, LAYER_Engrammer)  &RightMiddy (T, LAYER_Engrammer)  &RightRing1 (S, LAYER_Engrammer)  &RightPinky (N, LAYER_Engrammer)                 &kp Q
+              &kp ESC                            &kp G                            &kp X                            &kp J                            &kp K                  &kp MINUS  &thumb LAYER_Mouse _C(BACKSPACE)                    &kp LEFT  &thumb_lower_shift LAYER_Lower DOWN                               &kp UP                 &kp RIGHT  &thumb LAYER_System ENTER                 &kp FSLH                             &kp R                             &kp M                             &kp F                             &kp P                 &none
+ &magic LAYER_Magic 0                         &kp HOME                        &kp PG_UP                        &kp PG_DN                          &kp END                                &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE                &thumb LAYER_Function  &thumb_lower_shift LAYER_Lower RALT  &thumb LAYER_Symbol2 TAB  &space LAYER_Symbol SPACE                                               &parang_left                          &kp LBKT                          &kp RBKT                     &parang_right  &magic LAYER_Magic 0
             >;
         };
 
@@ -7407,12 +7407,12 @@ macros {
 
         layer_Number {
             bindings = <
-      &none               &none               &none               &none               &none                                                                                                                                                  &none       &none       &none          &none      &none
-      &none           &kp UNDER               &kp D               &kp E               &kp F          &none                                                                                                                   &kp CARET    &kp DLLR    &kp HASH      &kp AT       &kp EXCL   &kp PIPE
- &caps_word               &kp X               &kp A               &kp B               &kp C  &kp _KP_ENTER                                                                                                                   &kp PRCNT  &kp _KP_N7  &kp _KP_N8  &kp _KP_N9      &kp COLON      &kp K
- &kp KP_NUM  &kp LEFT_PINKY_MOD  &kp LEFT_RING1_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD        &kp TAB                                                                                                                &kp _KP_PLUS  &kp _KP_N4  &kp _KP_N5  &kp _KP_N6  &kp _KP_MINUS      &kp J
-  &kp _UNDO           &kp _C(A)        &select_line        &select_word            &kp BSPC      &kp SPACE                               &none   &none  &tog LAYER_Number         &kp LT       &kp GT  &kp _KP_EQUAL  &kp _KP_ASTERISK  &kp _KP_N1  &kp _KP_N2  &kp _KP_N3  &kp _KP_SLASH  &kp LS(G)
-  &kp _REDO           &sk LSHFT        &extend_line        &extend_word             &kp DEL                 &mod_tab_chord _A_TAB LAYER_Cursor   &none  &tog LAYER_Number  &kp _KP_COMMA  &kp _KP_DOT     &kp _KP_N0                        &trans      &trans      &trans         &trans  &kp TILDE
+      &none               &none               &none               &none               &none                                                                                                                                                  &none        &none          &none          &none      &none
+      &none           &kp UNDER               &kp D               &kp E               &kp F          &none                                                                                                                   &kp CARET    &kp DLLR     &kp HASH         &kp AT       &kp EXCL   &kp PIPE
+ &caps_word               &kp X               &kp A               &kp B               &kp C  &kp _KP_ENTER                                                                                                                   &kp PRCNT  &kp _KP_N7   &kp _KP_N8     &kp _KP_N9      &kp COLON      &kp K
+ &kp KP_NUM  &kp LEFT_PINKY_MOD  &kp LEFT_RING1_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD        &kp TAB                                                                                                                &kp _KP_PLUS  &kp _KP_N4   &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp J
+  &kp _UNDO           &kp _C(A)        &select_line        &select_word            &kp BSPC      &kp SPACE                               &none   &none  &tog LAYER_Number         &kp LT       &kp GT  &kp _KP_ENTER  &kp _KP_ASTERISK  &kp _KP_N1   &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp LS(G)
+  &kp _REDO           &sk LSHFT        &extend_line        &extend_word             &kp DEL                 &mod_tab_chord _A_TAB LAYER_Cursor   &none  &tog LAYER_Number  &kp _KP_COMMA  &kp _KP_DOT  &kp _KP_EQUAL                    &kp _KP_N0  &kp _KP_DOT  &kp _KP_COMMA      &kp UNDER  &kp TILDE
             >;
         };
 
@@ -7484,12 +7484,12 @@ macros {
 
         layer_System {
             bindings = <
- &kp _LOCK                     &none                  &kp PSCRN          &kp K_CALC               &none                                                                                                 &rgb_ug RGB_EFF      &rgb_ug RGB_SPI      &rgb_ug RGB_HUI        &rgb_ug RGB_BRI  &rgb_ug RGB_SAI
-     &none                     &none                      &none               &none               &none         &none                                                             &rgb_ug RGB_TOG       &rgb_ug RGB_EFR      &rgb_ug RGB_SPD      &rgb_ug RGB_HUD        &rgb_ug RGB_BRD  &rgb_ug RGB_SAD
-     &none  &world_quotes_left_angle  &world_quotes_right_angle  &world_o_diaeresis  &world_u_diaeresis         &none                                                                       &none  &world_currency_euro   &world_degree_sign                &none                  &none            &none
-     &none                     &none                      &none               &none  &world_a_diaeresis  &world_szlig                                                                       &none   &kp RIGHT_INDEX_MOD  &kp RIGHT_MIDDY_MOD  &kp RIGHT_RING1_MOD    &kp RIGHT_PINKY_MOD            &none
-     &none                     &none                      &none               &none               &none         &none   &none   &none   &none              &none   &none   &none            &none                 &none         &world_micro  &world_section_sign  &world_paragraph_sign            &none
-     &none                     &none                      &none               &none               &none                 &none   &none   &none  &tog LAYER_System   &none   &none                                  &none                &none                &none                  &none            &none
+ &kp _LOCK                           &none                        &kp PSCRN          &kp K_CALC               &none                                                                                                 &rgb_ug RGB_EFF      &rgb_ug RGB_SPI      &rgb_ug RGB_HUI        &rgb_ug RGB_BRI  &rgb_ug RGB_SAI
+     &none                           &none                            &none               &none               &none         &none                                                             &rgb_ug RGB_TOG       &rgb_ug RGB_EFR      &rgb_ug RGB_SPD      &rgb_ug RGB_HUD        &rgb_ug RGB_BRD  &rgb_ug RGB_SAD
+     &none        &world_quotes_left_angle        &world_quotes_right_angle  &world_o_diaeresis  &world_u_diaeresis         &none                                                                       &none  &world_currency_euro   &world_degree_sign                &none                  &none            &none
+     &none  &world_quotes_left_angle_lower  &world_quotes_right_angle_lower               &none  &world_a_diaeresis  &world_szlig                                                                       &none   &kp RIGHT_INDEX_MOD  &kp RIGHT_MIDDY_MOD  &kp RIGHT_RING1_MOD    &kp RIGHT_PINKY_MOD            &none
+     &none                           &none                            &none               &none               &none         &none   &none   &none   &none              &none   &none   &none            &none                 &none         &world_micro  &world_section_sign  &world_paragraph_sign            &none
+     &none                           &none                            &none               &none               &none                 &none   &none   &none  &tog LAYER_System   &none   &none                                  &none                &none                &none                  &none            &none
             >;
         };
 
