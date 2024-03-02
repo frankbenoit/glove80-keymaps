@@ -238,24 +238,17 @@
     },
     "Page down",
     {
-      "c": "#d1c4e9",
-      "p": "SPACE",
       "f": 3
     },
     "End",
     {
-      "c": "#D1C4E9",
-      "g": false,
-      "fa": [
-        9
-      ],
       "n": true
     },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    "",
     {
-      "c": "#cccccc",
-      "g": true,
-      "p": "CHICKLET"
+      "fa": [
+        9
+      ]
     },
     "&uArr;",
     "&dArr;",
@@ -299,9 +292,8 @@
   [
     {
       "x": 5,
-      "c": "#D1C4E9",
+      "c": "#cccccc",
       "g": true,
-      "p": "SPACE",
       "f": 3,
       "n": true
     },
@@ -311,13 +303,12 @@
     },
     "Delete\n\n\n\nNumber",
     {
-      "c": "#757575",
+      "c": "#D1C4E9",
       "t": "#EEEEEE",
       "g": false,
-      "p": "CHICKLET",
       "f": 3
     },
-    "Unlock layer",
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
     {
       "x": 1,
       "c": "#bbdefb",

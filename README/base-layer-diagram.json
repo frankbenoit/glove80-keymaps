@@ -23,11 +23,11 @@
   ],
   [
     {
-      "a": 5,
       "f": 5
     },
-    "+\n=",
+    "",
     {
+      "a": 5,
       "f": 4
     },
     "!\n1",
@@ -54,11 +54,11 @@
   ],
   [
     {
+      "a": 7,
       "f": 5
     },
-    "~\n`",
+    "Caps word",
     {
-      "a": 7,
       "f": 3
     },
     "B",
@@ -101,7 +101,7 @@
     "Z"
   ],
   [
-    "Caps word",
+    "Escape",
     {
       "c": "#FFCDD2",
       "p": "SPACE"
@@ -158,7 +158,7 @@
     "Q"
   ],
   [
-    "Shift",
+    "Escape",
     "G",
     "X",
     "J",
@@ -195,15 +195,12 @@
     "Home",
     "Page up",
     "Page down",
+    "End",
     {
-      "c": "#d1c4e9",
+      "c": "#D1C4E9",
       "p": "SPACE"
     },
-    "End\n\n\n\nEmoji",
-    {
-      "c": "#D1C4E9"
-    },
-    "Escape\n\n\n\nFunction",
+    "Ctrl BkSpc\n\n\n\nMouse",
     {
       "c": "#cccccc",
       "p": "CHICKLET",
@@ -225,14 +222,13 @@
     },
     "Enter\n\n\n\nSystem",
     {
-      "c": "#d1c4e9",
+      "c": "#cccccc",
+      "p": "CHICKLET",
       "a": 5,
       "f": 4
     },
-    "<\n(\n\n\nWorld",
+    "<\n(",
     {
-      "c": "#cccccc",
-      "p": "CHICKLET",
       "f": 3
     },
     "{\n[",
@@ -263,16 +259,16 @@
       "c": "#757575",
       "t": "#EEEEEE"
     },
-    "Shift <small>(1-shot)</small>\n\n\n\nLower",
+    "Shift <small>(1-shot)</small>\n\n\n\nFunction",
     {
       "x": 1
     },
-    "Shift <small>(1-shot)</small>\n\n\n\nLower",
+    "R Alt\n\n\n\nLower",
     {
       "c": "#D1C4E9",
       "t": "#000000"
     },
-    "Tab\n\n\n\nMouse",
+    "Tab\n\n\n\nSymbol2",
     {
       "n": true
     },

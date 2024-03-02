@@ -31,14 +31,10 @@
   ],
   [
     {
-      "c": "#d7ccc8",
       "t": "#000000",
       "f": 9
     },
     ".",
-    {
-      "c": "#cccccc"
-    },
     "`",
     {
       "f": 7
@@ -55,7 +51,7 @@
       "h": 4,
       "d": true
     },
-    "<center><h2>Symbol Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
+    "<center><h2>Symbol 2</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
     {
       "g": true,
       "a": 5,
@@ -73,32 +69,32 @@
       "a": 7,
       "f": 7
     },
-    "!",
+    "",
     {
       "c": "#bbdefb",
       "g": false
     },
-    "{",
+    "(",
     {
       "c": "#ffcdd2"
     },
-    "'",
-    "\"",
+    "`",
+    "@",
     {
       "c": "#bbdefb"
     },
-    "}",
+    ")",
     {
-      "c": "#ffecb3"
+      "c": "#cccccc",
+      "g": true
     },
     "?",
     {
-      "x": 5,
-      "c": "#BDBDBD"
+      "x": 5
     },
     ";",
     {
-      "c": "#cccccc",
+      "g": false,
       "f": 3
     },
     "Shift\n\n\n\nShift",
@@ -114,12 +110,12 @@
     {
       "f": 7
     },
-    "#",
+    "",
     {
       "c": "#ffecb3",
       "g": false
     },
-    "^",
+    "!",
     {
       "c": "#dcedc8"
     },
@@ -128,24 +124,26 @@
       "c": "#ffccbc",
       "f": 9
     },
-    "_",
+    "~",
     {
       "c": "#ffecb3",
       "f": 7,
       "n": true
     },
-    "$",
+    "%",
     {
       "f": 9
     },
-    "*",
+    "#",
     {
       "x": 5,
-      "c": "#BDBDBD"
+      "c": "#cccccc",
+      "g": true
     },
     ".",
     {
       "c": "#a5d6a7",
+      "g": false,
       "f": 3,
       "n": true
     },
@@ -163,32 +161,38 @@
     {
       "f": 7
     },
-    "@",
+    "",
     {
-      "c": "#dcedc8",
+      "c": "#bbdefb",
       "g": false
     },
-    "<",
-    "|",
-    {
-      "f": 9
-    },
-    "-",
-    {
-      "f": 7
-    },
-    ">",
+    "[",
     {
       "c": "#ffecb3"
     },
-    "/",
+    "&",
+    {
+      "f": 9
+    },
+    "+",
+    {
+      "c": "#bbdefb",
+      "f": 7
+    },
+    "]",
+    {
+      "c": "#ffecb3"
+    },
+    "\\",
     {
       "x": 5,
-      "c": "#BDBDBD"
+      "c": "#cccccc",
+      "g": true
     },
     "/",
     {
       "c": "#a5d6a7",
+      "g": false,
       "f": 3
     },
     "Delete",
@@ -205,7 +209,7 @@
     {
       "f": 8
     },
-    "~",
+    "",
     {
       "f": 7
     },
@@ -236,13 +240,12 @@
       ]
     },
     "&lArr;",
-    "&rArr;",
+    "",
     {
       "f": 3
     },
     "Enter\n\n\n\nSystem",
     {
-      "c": "#BDBDBD",
       "f": 7
     },
     "(",
@@ -256,7 +259,6 @@
     },
     ")",
     {
-      "c": "#cccccc",
       "f": 3
     },
     "F6"
@@ -286,9 +288,12 @@
     "Unlock layer",
     {
       "c": "#D1C4E9",
-      "t": "#000000"
+      "t": "#000000",
+      "fa": [
+        9
+      ]
     },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nMouse",
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
     {
       "c": "#cccccc",
       "g": true,
