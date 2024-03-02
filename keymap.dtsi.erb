@@ -1174,7 +1174,7 @@ macros {
       end
 
       def format_keystrokes_for_windows_unicode(keystrokes)
-        "UNICODE_SEQ_WINDOWS(#{
+        "UNICODE_SEQ_WINDOWS(&kp N0 #{
           strip_leading_zeroes_from_keystrokes(keystrokes)
         })"
       end
@@ -1341,7 +1341,7 @@ macros {
     //
     #ifndef UNICODE_SEQ_WINDOWS
     #define UNICODE_SEQ_WINDOWS(keystrokes) \
-        <&macro_press &kp RALT>, <&macro_tap &kp KP_PLUS keystrokes>, <&macro_release &kp RALT>
+        <&macro_tap &kp RALT &kp U keystrokes &kp ENTER>
     #endif
 
     //
