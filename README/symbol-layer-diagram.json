@@ -74,24 +74,21 @@
       "f": 7
     },
     "!",
-    {
-      "c": "#bbdefb",
-      "g": false
-    },
     "{",
     {
-      "c": "#ffcdd2"
+      "c": "#ffcdd2",
+      "g": false
     },
-    "'",
-    "\"",
+    "~",
+    "@",
     {
       "c": "#bbdefb"
     },
-    "}",
+    "`",
     {
       "c": "#ffecb3"
     },
-    "?",
+    "%",
     {
       "x": 5,
       "c": "#BDBDBD"
@@ -123,12 +120,12 @@
     {
       "c": "#dcedc8"
     },
-    "=",
+    "!",
     {
       "c": "#ffccbc",
       "f": 9
     },
-    "_",
+    "=",
     {
       "c": "#ffecb3",
       "f": 7,
@@ -165,23 +162,27 @@
     },
     "@",
     {
-      "c": "#dcedc8",
+      "c": "#ffcdd2",
       "g": false
     },
-    "<",
+    "#",
+    {
+      "c": "#dcedc8"
+    },
     "|",
     {
       "f": 9
     },
-    "-",
+    "&",
     {
+      "c": "#ffcdd2",
       "f": 7
     },
-    ">",
+    "\\",
     {
       "c": "#ffecb3"
     },
-    "/",
+    "+",
     {
       "x": 5,
       "c": "#BDBDBD"
@@ -207,9 +208,11 @@
     },
     "~",
     {
+      "c": "#BDBDBD",
+      "g": false,
       "f": 7
     },
-    "&",
+    "(",
     {
       "f": 6
     },
@@ -218,8 +221,10 @@
     {
       "f": 8
     },
-    "+",
+    ")",
     {
+      "c": "#cccccc",
+      "g": true,
       "f": 7
     },
     "\\",
@@ -285,15 +290,16 @@
     },
     "Unlock layer",
     {
-      "c": "#D1C4E9",
-      "t": "#000000"
-    },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nMouse",
-    {
       "c": "#cccccc",
-      "g": true,
+      "t": "#000000",
+      "g": true
+    },
+    "\n\n\n\nMouse",
+    {
+      "c": "#D1C4E9",
+      "g": false,
       "n": true
     },
-    ""
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />"
   ]
 ]
