@@ -262,6 +262,7 @@
     "<",
     ">",
     {
+      "c": "#a5d6a7",
       "f": 4
     },
     "Enter",
@@ -317,12 +318,15 @@
       "f": 8
     },
     ",\n\n\n\nMouse",
-    ".\n\n\n\nLight",
     {
-      "c": "#ffecb3",
-      "f": 6,
+      "c": "#DCEDC8"
+    },
+    "=\n\n\n\nLight",
+    {
+      "c": "#a5d6a7",
+      "f": 3,
       "n": true
     },
-    "=\n\n\n\nSymbol"
+    "Space\n\n\n\nSymbol"
   ]
 ]
