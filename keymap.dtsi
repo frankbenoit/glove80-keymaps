@@ -4,8 +4,8 @@
 #define ENFORCE_BILATERAL   // cancels single-handed home row mod+tap
 //#define WORLD_USE_COMPOSE   // use native Compose in place of Unicode
 
-#define PINKY_HOLDING_TIME 400
-#define RING1_HOLDING_TIME 400
+#define PINKY_HOLDING_TIME 350
+#define RING1_HOLDING_TIME 350
 
 // TIP: Add more setting overrides here instead of editing them below.
 
@@ -4141,6 +4141,12 @@ macros {
     #ifndef SELECT_WORD_DELAY
     #define SELECT_WORD_DELAY 1
     #endif
+
+    ZMK_MACRO(ralt_space,
+        wait-ms = <SELECT_WORD_DELAY>;
+        tap-ms = <SELECT_WORD_DELAY>;
+        bindings = <&kp RALT &kp SPACE>;
+    )
 
     ZMK_MACRO(select_none,
         wait-ms = <SELECT_WORD_DELAY>;
