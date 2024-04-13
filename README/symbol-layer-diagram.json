@@ -91,18 +91,21 @@
     "%",
     {
       "x": 5,
-      "c": "#BDBDBD"
+      "c": "#BDBDBD",
+      "g": true
     },
     ";",
     {
-      "c": "#cccccc",
+      "c": "#a5d6a7",
+      "g": false,
       "f": 3
     },
-    "Shift\n\n\n\nShift",
-    "Ctrl\n\n\n\nCtrl",
-    "Alt\n\n\n\nAlt",
-    "Win\n\n\n\nWin",
+    "Back space",
+    "Tab\n\n\n\nCtrl",
+    "Space",
+    "Enter",
     {
+      "c": "#cccccc",
       "g": true
     },
     "Z"
@@ -138,20 +141,21 @@
     "*",
     {
       "x": 5,
-      "c": "#BDBDBD"
+      "c": "#BDBDBD",
+      "g": true
     },
     ".",
     {
-      "c": "#a5d6a7",
+      "c": "#cccccc",
+      "g": false,
       "f": 3,
       "n": true
     },
-    "Back space",
-    "Tab",
-    "Space\n\n\n\nAltGr",
-    "Enter",
+    "Shift",
+    "Ctrl",
+    "Alt\n\n\n\nAltGr",
+    "Win",
     {
-      "c": "#cccccc",
       "g": true
     },
     "Q"
@@ -185,12 +189,12 @@
     "+",
     {
       "x": 5,
-      "c": "#BDBDBD"
-    },
-    "/",
-    {
-      "c": "#a5d6a7",
+      "c": "#cccccc",
       "f": 3
+    },
+    "Print screen",
+    {
+      "c": "#a5d6a7"
     },
     "Delete",
     "Shift +Tab",
@@ -209,7 +213,6 @@
     "~",
     {
       "c": "#BDBDBD",
-      "g": false,
       "f": 7
     },
     "(",
@@ -224,7 +227,6 @@
     ")",
     {
       "c": "#cccccc",
-      "g": true,
       "f": 7
     },
     "\\",
@@ -232,15 +234,25 @@
       "f": 9
     },
     ".",
-    "*",
+    {
+      "c": "#dcbba7",
+      "g": false,
+      "f": 3
+    },
+    "Power",
     {
       "x": 1,
+      "f": 4
+    },
+    "Lock",
+    {
+      "c": "#cccccc",
+      "g": true,
       "f": 3,
       "fa": [
         9
       ]
     },
-    "&lArr;",
     "&rArr;",
     {
       "f": 3
@@ -283,16 +295,12 @@
     ";",
     {
       "x": 1,
-      "c": "#757575",
       "t": "#EEEEEE",
-      "g": false,
       "f": 3
     },
     "Unlock layer",
     {
-      "c": "#cccccc",
-      "t": "#000000",
-      "g": true
+      "t": "#000000"
     },
     "\n\n\n\nMouse",
     {

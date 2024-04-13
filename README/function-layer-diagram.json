@@ -50,7 +50,7 @@
     },
     "<center><h2>Function Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
     {
-      "c": "#bbdefb",
+      "g": true,
       "a": 7,
       "f": 3
     },
@@ -63,13 +63,13 @@
   ],
   [
     {
-      "c": "#cccccc",
-      "g": true,
-      "a": 5
+      "c": "#e1bee7",
+      "g": false
     },
-    "~\n`",
+    "Caps lock",
     {
-      "a": 7
+      "c": "#cccccc",
+      "g": true
     },
     "B",
     "AltGr\n\n\n\nAltGr",
@@ -81,13 +81,12 @@
     "\"\n'",
     {
       "x": 5,
-      "c": "#FFECB3",
-      "g": false,
       "a": 7
     },
     "Web <small>browser</small>",
     {
       "c": "#dcedc8",
+      "g": false,
       "f": 4
     },
     "F7",
@@ -107,12 +106,12 @@
   ],
   [
     {
-      "c": "#e1bee7",
-      "f": 3
-    },
-    "Caps lock",
-    {
       "c": "#cccccc",
+      "g": true
+    },
+    "",
+    {
+      "g": false,
       "f": 3
     },
     "Win\n\n\n\nWin",
@@ -137,14 +136,13 @@
     "<\n,",
     {
       "x": 5,
-      "c": "#FFECB3",
-      "g": false,
       "a": 7,
       "f": 3
     },
     "Calc<small>-ulator</small>",
     {
       "c": "#dcedc8",
+      "g": false,
       "f": 4,
       "n": true
     },
@@ -193,14 +191,13 @@
     "_\n-",
     {
       "x": 5,
-      "c": "#FFECB3",
-      "g": false,
       "a": 7,
       "f": 3
     },
     "My PC",
     {
       "c": "#dcedc8",
+      "g": false,
       "f": 4
     },
     "F1",
@@ -254,8 +251,6 @@
     "&dArr;",
     {
       "x": 1,
-      "c": "#bbdefb",
-      "g": false,
       "f": 3
     },
     "Prev track",
@@ -268,7 +263,6 @@
     },
     "Play / pause",
     {
-      "c": "#ffcdd2",
       "f": 3
     },
     "Bright max",
@@ -292,8 +286,6 @@
   [
     {
       "x": 5,
-      "c": "#cccccc",
-      "g": true,
       "f": 3,
       "n": true
     },
@@ -303,24 +295,24 @@
     },
     "Delete\n\n\n\nNumber",
     {
-      "c": "#D1C4E9",
-      "t": "#EEEEEE",
-      "g": false,
-      "f": 3
+      "t": "#EEEEEE"
     },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    "",
     {
       "x": 1,
-      "c": "#bbdefb",
       "t": "#000000",
       "f": 3
     },
     "Mute\n\n\n\nSymbol",
     {
+      "c": "#D1C4E9",
+      "g": false,
       "f": 3
     },
-    "Vol ➖\n\n\n\nLight",
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nLight",
     {
+      "c": "#cccccc",
+      "g": true,
       "f": 3,
       "n": true
     },

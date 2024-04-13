@@ -23,12 +23,11 @@
   ],
   [
     {
-      "f": 5
-    },
-    "",
-    {
-      "a": 5,
       "f": 4
+    },
+    "RALT",
+    {
+      "a": 5
     },
     "!\n1",
     "@\n2",
@@ -54,8 +53,7 @@
   ],
   [
     {
-      "a": 7,
-      "f": 5
+      "a": 7
     },
     "Caps word",
     {
@@ -158,7 +156,7 @@
     "Q"
   ],
   [
-    "Escape",
+    "RALT Shift",
     "G",
     "X",
     "J",
@@ -180,7 +178,7 @@
     "M",
     "F",
     "P",
-    "Shift"
+    ""
   ],
   [
     {
@@ -202,7 +200,7 @@
       "p": "SPACE",
       "f": 3
     },
-    "Ctrl BkSpc\n\n\n\nMouse",
+    "ESC",
     {
       "c": "#cccccc",
       "p": "CHICKLET",
@@ -222,7 +220,7 @@
       "p": "SPACE",
       "f": 3
     },
-    "Enter\n\n\n\nSystem",
+    "Enter",
     {
       "c": "#cccccc",
       "p": "CHICKLET",
@@ -253,16 +251,16 @@
       "c": "#757575",
       "t": "#EEEEEE"
     },
-    "Shift <small>(1-shot)</small>\n\n\n\nFunction",
+    "Shift <small>(1-shot)</small>",
     {
       "x": 1
     },
-    "R Alt\n\n\n\nLower",
+    "R Alt",
     {
       "c": "#D1C4E9",
       "t": "#000000"
     },
-    "Tab\n\n\n\nSymbol2",
+    "Tab\n\n\n\nFunction",
     {
       "n": true
     },
