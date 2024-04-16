@@ -628,7 +628,10 @@ behaviors {
     #define RIGHT_INDEX_KEY KEY_RH_C2R4
     #define RIGHT_PLAIN_KEY KEY_RH_C1R4
 
-    #if defined(LAYER_Engram) && LAYER_Engram == 0
+    #if defined(LAYER_Engrammer) && LAYER_Engrammer == 0
+    #define LeftPlainKey  engrammer_COMMA
+    #define RightPlainKey engrammer_DOT
+    #elif defined(LAYER_Engram) && LAYER_Engram == 0
     #define LeftPlainKey  engram_COMMA
     #define RightPlainKey engram_DOT
     #else
@@ -842,6 +845,26 @@ behaviors {
         bindings = <&mo>, <&engram_DOT>;
         retro-tap; // tap on standalone hold
     };
+    plain_engrammer_COMMA: plain_typing_layer_engrammer_COMMA {
+        compatible = "zmk,behavior-hold-tap";
+        flavor = PLAIN_HOLDING_TYPE;
+        tapping-term-ms = <PLAIN_HOLDING_TIME>;
+        quick-tap-ms = <PLAIN_REPEAT_DECAY>; // enable repeat
+        require-prior-idle-ms = <PLAIN_STREAK_DECAY>;
+        #binding-cells = <2>;
+        bindings = <&mo>, <&engrammer_COMMA>;
+        retro-tap; // tap on standalone hold
+    };
+    plain_engrammer_DOT: plain_typing_layer_engrammer_DOT {
+        compatible = "zmk,behavior-hold-tap";
+        flavor = PLAIN_HOLDING_TYPE;
+        tapping-term-ms = <PLAIN_HOLDING_TIME>;
+        quick-tap-ms = <PLAIN_REPEAT_DECAY>; // enable repeat
+        require-prior-idle-ms = <PLAIN_STREAK_DECAY>;
+        #binding-cells = <2>;
+        bindings = <&mo>, <&engrammer_DOT>;
+        retro-tap; // tap on standalone hold
+    };
 
     //
     // Thumb cluster hold-tap keys for Miryoku layers
@@ -936,6 +959,18 @@ behaviors {
       end
     %>
 
+    engrammer_COMMA: engrammer_shift_COMMA_EXCL {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp COMMA>, <&kp EXCL>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    engrammer_DOT: engrammer_shift_DOT_QMARK {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DOT>, <&kp QMARK>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
     //////////////////////////////////////////////////////////////////////////
     //
     // &sk (sticky key) variant that is truly one-shot

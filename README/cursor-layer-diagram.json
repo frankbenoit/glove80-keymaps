@@ -41,14 +41,10 @@
       "a": 7
     },
     "",
-    {
-      "c": "#ffccbc",
-      "g": false
-    },
     "Delete",
     "Insert",
     {
-      "c": "#cccccc",
+      "g": false,
       "a": 4,
       "f": 4,
       "w": 5,
@@ -57,16 +53,12 @@
     },
     "<center><h2>Cursor Layer</h2><p>MoErgo Glove80 keyboard</p><ul><li><a href='https://github.com/manna-harbour/miryoku'>Miryoku</a> layers & home row mods</li><li><a href='https://engram.dev'>Engram</a><a href='https://github.com/sunaku/engrammer'><em>&middot;mer</em></a> keyboard layout</li><li>See <a href='https://is.gd/sunaku_glove80'>is.gd/sunaku_glove80</a></li></ul></center>",
     {
-      "c": "#ffccbc",
+      "g": true,
       "a": 7,
       "f": 3
     },
     "Insert",
     "Delete",
-    {
-      "c": "#cccccc",
-      "g": true
-    },
     "",
     "",
     {
@@ -77,81 +69,94 @@
   ],
   [
     {
-      "c": "#ffcdd2",
-      "g": false,
       "a": 7
     },
     "Search bar\n\n\n\nSymbol",
     {
-      "c": "#cccccc"
-    },
-    "Shift <small>(sticky)</small>",
-    {
-      "c": "#e1bee7"
-    },
-    "Redo",
-    "Undo",
-    {
-      "c": "#ffccbc"
-    },
-    "Back space",
-    {
-      "c": "#ffecb3"
+      "c": "#ffecb3",
+      "g": false
     },
     "Cut",
-    {
-      "x": 5
-    },
-    "Cut",
+    "Copy",
+    "Paste",
     {
       "c": "#ffccbc"
-    },
-    "Back space",
-    {
-      "c": "#e1bee7"
     },
     "Undo",
     "Redo",
     {
-      "c": "#cccccc"
+      "x": 5,
+      "c": "#cccccc",
+      "g": true
     },
-    "Shift <small>(sticky)</small>",
+    "Cut",
     {
-      "c": "#ffcdd2"
+      "c": "#e1bee7",
+      "g": false,
+      "f": 9
+    },
+    "&rArr;",
+    {
+      "f": 4
+    },
+    "End",
+    {
+      "c": "#cccccc",
+      "f": 7
+    },
+    "$",
+    "~",
+    {
+      "g": true,
+      "f": 3
     },
     "Search bar\n\n\n\nSymbol"
   ],
   [
     "URL bar",
     {
-      "c": "#cccccc"
+      "g": false,
+      "f": 7
     },
-    "Win\n\n\n\nWin",
-    "Alt\n\n\n\nAlt",
-    "Ctrl\n\n\n\nCtrl",
+    "#\n\n\n\nWin",
+    "@\n\n\n\nAlt",
+    {
+      "c": "#e1bee7",
+      "f": 3
+    },
+    "PgDn\n\n\n\nCtrl",
     {
       "n": true
     },
-    "Shift\n\n\n\nShift",
+    "PgUp\n\n\n\nShift",
     {
-      "c": "#ffecb3"
+      "c": "#cccccc",
+      "g": true
     },
-    "Copy",
+    "",
     {
       "x": 5
     },
     "Copy",
     {
-      "c": "#dcedc8",
+      "c": "#e1bee7",
+      "g": false,
       "f": 9,
       "n": true
     },
     "&lArr;\n\n\n\nShift",
-    "&uArr;\n\n\n\nCtrl",
-    "&dArr;\n\n\n\nAlt",
-    "&rArr;\n\n\n\nWin",
     {
-      "c": "#ffcdd2",
+      "f": 4
+    },
+    "Home\n\n\n\nCtrl",
+    {
+      "c": "#cccccc",
+      "f": 7
+    },
+    "^\n\n\n\nAlt",
+    "\\\n\n\n\nWin",
+    {
+      "g": true,
       "f": 3
     },
     "URL bar"
@@ -159,76 +164,70 @@
   [
     "Down loads",
     {
-      "c": "#bbdefb",
-      "t": "#00000"
+      "t": "#00000",
+      "g": false,
+      "f": 7
     },
-    "Select all",
+    "`",
     {
       "t": "#000000"
     },
-    "Select line\n\n\n\nMouse",
-    "Select word\n\n\n\nSymbol",
+    "%",
     {
-      "c": "#e1bee7"
+      "c": "#e1bee7",
+      "f": 9
     },
-    "Find",
+    "&dArr;\n\n\n\nSymbol",
+    "&uArr;",
     {
-      "c": "#ffecb3"
+      "c": "#cccccc",
+      "g": true,
+      "f": 3
     },
-    "Paste",
+    "",
     {
       "x": 5
     },
     "Paste",
     {
-      "c": "#dcedc8"
+      "g": false,
+      "f": 7
     },
-    "Home",
-    "Page up",
-    "Page down\n\n\n\nAltGr",
-    "End",
+    "(",
+    "{",
+    "}\n\n\n\nAltGr",
+    ")",
     {
-      "c": "#ffcdd2"
+      "c": "#o",
+      "g": true,
+      "f": 3
     },
     "Down loads"
   ],
   [
     {
-      "c": "#e1bee7"
+      "c": "#cccccc"
     },
     "Find & replace\n\n\n\nMouse",
     "Find prev",
-    {
-      "c": "#bbdefb"
-    },
     "Extend line",
     "Extend word",
-    {
-      "c": "#e1bee7"
-    },
     "Find next",
-    {
-      "c": "#ffccbc"
-    },
     "Tab\n\n\n\nFunction",
-    {
-      "c": "#a5d6a7"
-    },
     "Ctrl-Tab",
     "Win-Tab",
     {
-      "x": 1,
-      "c": "#bbdefb"
+      "x": 1
     },
     "Select none",
     "Extend line",
     "Extend word",
-    {
-      "c": "#e1bee7"
-    },
     "Find",
     "Find prev",
     "Find next",
+    {
+      "c": "#o"
+    },
     "Find & replace\n\n\n\nMouse",
     "Emoji picker"
   ],
@@ -236,25 +235,25 @@
     {
       "x": 5,
       "c": "#D1C4E9",
+      "g": false,
       "p": "SPACE",
       "f": 9,
       "n": true
     },
     "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
     {
-      "c": "#a5d6a7",
+      "c": "#cccccc",
+      "g": true,
       "p": "CHICKLET",
       "f": 3
     },
     "Alt-Tab\n\n\n\nNumber",
     {
-      "c": "#757575",
       "t": "#EEEEEE"
     },
     "Unlock layer",
     {
       "x": 1,
-      "c": "#bbdefb",
       "t": "#00000"
     },
     "Select all",

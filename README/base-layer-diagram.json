@@ -96,7 +96,7 @@
       "p": "CHICKLET"
     },
     "V",
-    "Z"
+    ""
   ],
   [
     "Escape",
@@ -124,11 +124,11 @@
       "a": 5,
       "f": 4
     },
-    "<\n,",
+    "!\n,",
     {
       "x": 5
     },
-    ">\n.",
+    "?\n.",
     {
       "c": "#DCEDC8",
       "p": "SPACE",
@@ -153,7 +153,7 @@
       "c": "#cccccc",
       "p": "CHICKLET"
     },
-    "Q"
+    "Enter"
   ],
   [
     "RALT Shift",
@@ -162,16 +162,14 @@
     "J",
     "K",
     {
-      "a": 5,
       "f": 4
     },
-    "_\n-",
+    "Z",
     {
       "x": 5
     },
-    "?\n/",
+    "Q",
     {
-      "a": 7,
       "f": 3
     },
     "R",
@@ -245,13 +243,13 @@
       "p": "SPACE",
       "n": true
     },
-    "Back space\n\n\n\nCursor",
-    "Delete\n\n\n\nNumber",
+    "Back space\n\n\n\nNav",
+    "Delete\n\n\n\nMouse",
     {
       "c": "#757575",
       "t": "#EEEEEE"
     },
-    "Shift <small>(1-shot)</small>",
+    "R Alt",
     {
       "x": 1
     },
@@ -264,6 +262,6 @@
     {
       "n": true
     },
-    "Space\n\n\n\nSymbol"
+    "Space\n\n\n\nNumber"
   ]
 ]

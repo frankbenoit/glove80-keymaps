@@ -74,8 +74,12 @@
     "B",
     "AltGr\n\n\n\nAltGr",
     "O",
-    "U",
     {
+      "g": false
+    },
+    "Print Screen",
+    {
+      "g": true,
       "a": 5
     },
     "\"\n'",
@@ -89,14 +93,13 @@
       "g": false,
       "f": 4
     },
-    "F7",
-    "F8",
     "F9",
-    {
-      "c": "#ffccbc"
-    },
     "F10",
+    "F11",
+    "F12",
     {
+      "c": "#cccccc",
+      "g": true,
       "f": 3,
       "fa": [
         4
@@ -105,30 +108,21 @@
     "F13"
   ],
   [
-    {
-      "c": "#cccccc",
-      "g": true
-    },
     "",
     {
+      "c": "#dcedc8",
       "g": false,
-      "f": 3
+      "f": 4
     },
-    "Win\n\n\n\nWin",
+    "F16",
+    "F15",
+    "F14",
     {
-      "f": 3
-    },
-    "Alt\n\n\n\nAlt",
-    {
-      "f": 3
-    },
-    "Ctrl\n\n\n\nCtrl",
-    {
-      "f": 3,
       "n": true
     },
-    "Shift\n\n\n\nShift",
+    "F13",
     {
+      "c": "#cccccc",
       "g": true,
       "a": 5,
       "f": 3
@@ -136,8 +130,7 @@
     "<\n,",
     {
       "x": 5,
-      "a": 7,
-      "f": 3
+      "a": 7
     },
     "Calc<small>-ulator</small>",
     {
@@ -146,14 +139,13 @@
       "f": 4,
       "n": true
     },
-    "F4\n\n\n\nShift",
-    "F5\n\n\n\nCtrl",
-    "F6\n\n\n\nAlt",
+    "F5\n\n\n\nShift",
+    "F6\n\n\n\nCtrl",
+    "F7\n\n\n\nAlt",
+    "F8\n\n\n\nWin",
     {
-      "c": "#ffccbc"
-    },
-    "F11\n\n\n\nWin",
-    {
+      "c": "#cccccc",
+      "g": true,
       "f": 3,
       "fa": [
         4
@@ -163,8 +155,6 @@
   ],
   [
     {
-      "c": "#cccccc",
-      "g": true,
       "f": 3
     },
     "Shift",
@@ -203,11 +193,10 @@
     "F1",
     "F2",
     "F3\n\n\n\nAltGr",
+    "F4",
     {
-      "c": "#ffccbc"
-    },
-    "F12",
-    {
+      "c": "#cccccc",
+      "g": true,
       "f": 3,
       "fa": [
         4
@@ -217,8 +206,6 @@
   ],
   [
     {
-      "c": "#cccccc",
-      "g": true,
       "f": 3
     },
     "F5",
