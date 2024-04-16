@@ -73,21 +73,20 @@
     },
     "Search bar\n\n\n\nSymbol",
     {
-      "c": "#ffecb3",
-      "g": false
+      "g": false,
+      "f": 7
     },
-    "Cut",
-    "Copy",
-    "Paste",
+    "<",
+    "-",
+    "=",
+    ">",
     {
-      "c": "#ffccbc"
+      "g": true,
+      "f": 3
     },
-    "Undo",
     "Redo",
     {
-      "x": 5,
-      "c": "#cccccc",
-      "g": true
+      "x": 5
     },
     "Cut",
     {
@@ -105,8 +104,12 @@
       "f": 7
     },
     "$",
-    "~",
     {
+      "c": "#e1bee7"
+    },
+    "Ins",
+    {
+      "c": "#cccccc",
       "g": true,
       "f": 3
     },
@@ -154,9 +157,11 @@
       "f": 7
     },
     "^\n\n\n\nAlt",
+    {
+      "g": true
+    },
     "\\\n\n\n\nWin",
     {
-      "g": true,
       "f": 3
     },
     "URL bar"
@@ -168,11 +173,11 @@
       "g": false,
       "f": 7
     },
-    "`",
+    "\\",
     {
       "t": "#000000"
     },
-    "%",
+    "`",
     {
       "c": "#e1bee7",
       "f": 9
@@ -262,8 +267,11 @@
     },
     "Select line\n\n\n\nMouse",
     {
+      "c": "#D1C4E9",
+      "g": false,
+      "p": "SPACE",
       "n": true
     },
-    "Select word\n\n\n\nSymbol"
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />"
   ]
 ]

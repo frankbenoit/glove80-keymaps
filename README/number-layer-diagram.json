@@ -76,18 +76,13 @@
     },
     "Caps word",
     {
-      "c": "#ffccbc",
       "f": 7
     },
-    "<",
+    "%",
+    "!",
+    "=",
+    "~",
     {
-      "c": "#dcedc8"
-    },
-    "-",
-    "+",
-    ">",
-    {
-      "c": "#cccccc",
       "g": true,
       "f": 3
     },
@@ -129,13 +124,13 @@
       "c": "#cccccc",
       "f": 7
     },
-    "*\n\n\n\nWin",
-    "!\n\n\n\nAlt",
-    "=\n\n\n\nCtrl",
+    "+\n\n\n\nWin",
+    "-\n\n\n\nAlt",
+    "|\n\n\n\nCtrl",
     {
       "n": true
     },
-    "/\n\n\n\nShift",
+    "&\n\n\n\nShift",
     ",",
     {
       "x": 5
@@ -170,12 +165,12 @@
       "g": false,
       "f": 7
     },
-    "[",
+    "/",
     {
       "t": "#000000"
     },
-    "|\n\n\n\nMouse",
-    "&\n\n\n\nSymbol",
+    "*\n\n\n\nMouse",
+    "[\n\n\n\nSymbol",
     "]",
     {
       "g": true,
@@ -261,11 +256,13 @@
     },
     "Alt-Tab\n\n\n\nCursor",
     {
+      "g": false,
       "n": true
     },
-    "",
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
     {
-      "t": "#EEEEEE"
+      "t": "#EEEEEE",
+      "g": true
     },
     "Unlock layer",
     {
@@ -274,11 +271,12 @@
       "f": 8
     },
     ",\n\n\n\nMouse",
-    "=\n\n\n\nLight",
     {
-      "c": "#D1C4E9",
-      "g": false,
-      "p": "SPACE",
+      "g": false
+    },
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nLight",
+    {
+      "g": true,
       "f": 3,
       "n": true
     },

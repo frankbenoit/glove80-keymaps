@@ -244,24 +244,24 @@
       "n": true
     },
     "Back space\n\n\n\nNav",
-    "Delete\n\n\n\nMouse",
+    "Delete\n\n\n\nNumber",
     {
       "c": "#757575",
       "t": "#EEEEEE"
     },
-    "R Alt",
+    "R Alt\n\n\n\nFunction",
     {
       "x": 1
     },
-    "R Alt",
+    "R Alt\n\n\n\nFunction",
     {
       "c": "#D1C4E9",
       "t": "#000000"
     },
-    "Tab\n\n\n\nFunction",
+    "Tab\n\n\n\nNumber",
     {
       "n": true
     },
-    "Space\n\n\n\nNumber"
+    "Space\n\n\n\nNav"
   ]
 ]

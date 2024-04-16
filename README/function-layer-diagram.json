@@ -73,19 +73,22 @@
     },
     "B",
     "AltGr\n\n\n\nAltGr",
-    "O",
     {
-      "g": false
+      "c": "#c9cd8f",
+      "g": false,
+      "f": 4
+    },
+    "Undo",
+    "Redo",
+    {
+      "c": "#99d78b",
+      "f": 3
     },
     "Print Screen",
     {
-      "g": true,
-      "a": 5
-    },
-    "\"\n'",
-    {
       "x": 5,
-      "a": 7
+      "c": "#cccccc",
+      "g": true
     },
     "Web <small>browser</small>",
     {
@@ -163,26 +166,23 @@
     },
     "G",
     {
-      "f": 3
+      "c": "#c9cd8f",
+      "g": false,
+      "f": 4
     },
-    "X",
+    "Cut",
+    "Copy",
+    "Paste",
     {
-      "f": 3
-    },
-    "J",
-    {
-      "f": 3
-    },
-    "K",
-    {
+      "c": "#cccccc",
+      "g": true,
       "a": 5,
       "f": 3
     },
     "_\n-",
     {
       "x": 5,
-      "a": 7,
-      "f": 3
+      "a": 7
     },
     "My PC",
     {
@@ -282,24 +282,22 @@
     },
     "Delete\n\n\n\nNumber",
     {
-      "t": "#EEEEEE"
+      "t": "#EEEEEE",
+      "g": false,
+      "f": 3
     },
-    "",
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
     {
       "x": 1,
       "t": "#000000",
       "f": 3
     },
-    "Mute\n\n\n\nSymbol",
+    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nSymbol",
     {
-      "c": "#D1C4E9",
-      "g": false,
-      "f": 3
+      "g": true
     },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nLight",
+    "\n\n\n\nLight",
     {
-      "c": "#cccccc",
-      "g": true,
       "f": 3,
       "n": true
     },
