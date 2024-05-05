@@ -77,25 +77,22 @@
       "f": 7
     },
     "~",
-    "%",
+    "/",
+    "\\",
     {
-      "g": true
+      "c": "#fcde83"
     },
-    "=",
-    ">",
+    "L2",
     {
-      "f": 3
+      "c": "#cccccc"
     },
-    "Redo",
+    "`",
     {
-      "x": 5
-    },
-    "Cut",
-    {
+      "x": 5,
       "c": "#e1bee7",
-      "g": false,
       "f": 9
     },
+    "⇥",
     "&rArr;",
     {
       "f": 4
@@ -127,7 +124,7 @@
     "@\n\n\n\nAlt",
     {
       "c": "#e1bee7",
-      "f": 3
+      "f": 4
     },
     "PgDn\n\n\n\nCtrl",
     {
@@ -136,17 +133,16 @@
     "PgUp\n\n\n\nShift",
     {
       "c": "#cccccc",
-      "g": true
+      "f": 7
     },
-    "",
+    "%",
     {
-      "x": 5
-    },
-    "Copy",
-    {
+      "x": 5,
       "c": "#e1bee7",
-      "g": false,
-      "f": 9,
+      "f": 9
+    },
+    "⇤",
+    {
       "n": true
     },
     "&lArr;\n\n\n\nShift",
@@ -174,33 +170,33 @@
   [
     "Down loads",
     {
+      "c": "#e1bee7",
       "t": "#00000",
       "g": false,
       "f": 7
     },
-    "\\",
+    "CAP",
     {
       "t": "#000000"
     },
-    "`",
+    "Del",
     {
-      "c": "#e1bee7",
       "f": 9
     },
     "&dArr;\n\n\n\nSymbol",
     "&uArr;",
     {
+      "c": "#FFCCBC",
+      "f": 7
+    },
+    "Esc",
+    {
+      "x": 5,
+      "f": 5
+    },
+    "Enter",
+    {
       "c": "#cccccc",
-      "g": true,
-      "f": 3
-    },
-    "",
-    {
-      "x": 5
-    },
-    "Paste",
-    {
-      "g": false,
       "f": 7
     },
     "(",
@@ -244,17 +240,15 @@
   [
     {
       "x": 5,
-      "c": "#D1C4E9",
+      "c": "#fcde83",
       "g": false,
-      "p": "SPACE",
-      "f": 9,
+      "f": 7,
       "n": true
     },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
+    "L3",
     {
       "c": "#cccccc",
       "g": true,
-      "p": "CHICKLET",
       "f": 3
     },
     "Alt-Tab\n\n\n\nNumber",
@@ -272,11 +266,11 @@
     },
     "Select line\n\n\n\nMouse",
     {
-      "c": "#D1C4E9",
+      "c": "#fcde83",
       "g": false,
-      "p": "SPACE",
+      "f": 7,
       "n": true
     },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />"
+    "L0"
   ]
 ]

@@ -62,24 +62,22 @@
     "Eject"
   ],
   [
-    {
-      "c": "#e1bee7",
-      "g": false
-    },
     "Caps lock",
-    {
-      "c": "#cccccc",
-      "g": true
-    },
     "B",
-    "AltGr\n\n\n\nAltGr",
     {
       "c": "#c9cd8f",
-      "g": false,
+      "g": false
+    },
+    "Redo\n\n\n\nAltGr",
+    {
       "f": 4
     },
     "Undo",
-    "Redo",
+    {
+      "c": "#fcde83",
+      "f": 7
+    },
+    "L2",
     {
       "c": "#99d78b",
       "f": 3
@@ -125,15 +123,14 @@
     },
     "F13",
     {
-      "c": "#cccccc",
-      "g": true,
-      "a": 5,
-      "f": 3
+      "c": "#99d78b"
     },
-    "<\n,",
+    "Calc",
     {
       "x": 5,
-      "a": 7
+      "c": "#cccccc",
+      "g": true,
+      "f": 3
     },
     "Calc<small>-ulator</small>",
     {
@@ -174,20 +171,17 @@
     "Copy",
     "Paste",
     {
-      "c": "#cccccc",
-      "g": true,
-      "a": 5,
-      "f": 3
+      "c": "#FFCCBC",
+      "f": 7
     },
-    "_\n-",
+    "Esc",
     {
       "x": 5,
-      "a": 7
+      "f": 5
     },
-    "My PC",
+    "Enter",
     {
       "c": "#dcedc8",
-      "g": false,
       "f": 4
     },
     "F1",
@@ -238,69 +232,55 @@
     "&dArr;",
     {
       "x": 1,
-      "f": 3
+      "c": "#d97b7b",
+      "g": false,
+      "f": 5
     },
-    "Prev track",
+    "Lock",
     {
+      "c": "#cccccc",
+      "g": true,
       "f": 3
     },
     "Next track",
-    {
-      "f": 3
-    },
     "Play / pause",
-    {
-      "f": 3
-    },
     "Bright max",
-    {
-      "f": 3
-    },
     "Bright ➕",
-    {
-      "f": 3
-    },
     "Bright ➖",
-    {
-      "f": 3
-    },
     "Bright min",
-    {
-      "f": 3
-    },
     "Bright auto"
   ],
   [
     {
       "x": 5,
-      "f": 3,
+      "c": "#fcde83",
+      "g": false,
+      "f": 7,
       "n": true
     },
-    "Back space\n\n\n\nCursor",
+    "L1\n\n\n\nCursor",
     {
+      "c": "#cccccc",
+      "g": true,
       "f": 3
     },
     "Delete\n\n\n\nNumber",
     {
-      "t": "#EEEEEE",
-      "g": false,
-      "f": 3
+      "t": "#EEEEEE"
     },
     "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
     {
       "x": 1,
-      "t": "#000000",
-      "f": 3
+      "t": "#000000"
     },
     "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nSymbol",
-    {
-      "g": true
-    },
     "\n\n\n\nLight",
     {
-      "f": 3,
+      "c": "#fcde83",
+      "g": false,
+      "f": 7,
       "n": true
     },
-    "Vol ➕\n\n\n\nMouse"
+    "L0\n\n\n\nMouse"
   ]
 ]

@@ -23,10 +23,12 @@
   ],
   [
     {
+      "g": true,
       "f": 4
     },
     "RALT",
     {
+      "g": false,
       "a": 5
     },
     "!\n1",
@@ -49,6 +51,9 @@
     "*\n8",
     "(\n9",
     ")\n0",
+    {
+      "g": true
+    },
     "|\n\\"
   ],
   [
@@ -57,6 +62,7 @@
     },
     "Caps word",
     {
+      "g": false,
       "f": 3
     },
     "B",
@@ -96,12 +102,16 @@
       "p": "CHICKLET"
     },
     "V",
+    {
+      "g": true
+    },
     ""
   ],
   [
     "Escape",
     {
       "c": "#FFCDD2",
+      "g": false,
       "p": "SPACE"
     },
     "C\n\n\n\nWin",
@@ -151,12 +161,16 @@
     "N\n\n\n\nWin",
     {
       "c": "#cccccc",
+      "g": true,
       "p": "CHICKLET"
     },
     "Enter"
   ],
   [
     "RALT Shift",
+    {
+      "g": false
+    },
     "G",
     "X",
     "J",
@@ -176,17 +190,22 @@
     "M",
     "F",
     "P",
+    {
+      "g": true
+    },
     ""
   ],
   [
     {
       "c": "#757575",
-      "t": "#EEEEEE"
+      "t": "#EEEEEE",
+      "g": false
     },
     "Magic",
     {
       "c": "#cccccc",
       "t": "#000000",
+      "g": true,
       "f": 5
     },
     "(",
@@ -194,14 +213,11 @@
     "]",
     ")",
     {
-      "c": "#D1C4E9",
-      "p": "SPACE",
       "f": 3
     },
     "ESC",
     {
-      "c": "#cccccc",
-      "p": "CHICKLET",
+      "g": false,
       "fa": [
         9
       ]
@@ -214,14 +230,11 @@
     "&uArr;",
     "&rArr;",
     {
-      "c": "#D1C4E9",
-      "p": "SPACE",
+      "g": true,
       "f": 3
     },
     "Enter",
     {
-      "c": "#cccccc",
-      "p": "CHICKLET",
       "f": 5
     },
     "<",
@@ -231,6 +244,7 @@
     {
       "c": "#757575",
       "t": "#EEEEEE",
+      "g": false,
       "f": 3
     },
     "Magic"
@@ -238,30 +252,33 @@
   [
     {
       "x": 5,
-      "c": "#D1C4E9",
+      "c": "#fcde83",
       "t": "#000000",
       "p": "SPACE",
       "n": true
     },
-    "Back space\n\n\n\nNav",
-    "Delete\n\n\n\nNumber",
+    "L1\n\n\n\nEscape",
     {
-      "c": "#757575",
-      "t": "#EEEEEE"
+      "c": "#D1C4E9"
     },
-    "R Alt\n\n\n\nFunction",
+    "Bsp\n\n\n\nShift",
+    {
+      "c": "#cccccc",
+      "g": true
+    },
+    "\n\n\n\nFunction",
     {
       "x": 1
     },
-    "R Alt\n\n\n\nFunction",
+    "\n\n\n\nFunction",
     {
       "c": "#D1C4E9",
-      "t": "#000000"
+      "g": false
     },
-    "Tab\n\n\n\nNumber",
+    "Del\n\n\n\nShift",
     {
       "n": true
     },
-    "Space\n\n\n\nNav"
+    "Space\n\n\n\nEnter"
   ]
 ]

@@ -71,11 +71,11 @@
   ],
   [
     {
-      "g": false,
       "f": 3
     },
     "Caps word",
     {
+      "g": false,
       "f": 7
     },
     "<",
@@ -97,36 +97,31 @@
       "g": false,
       "f": 6
     },
+    "7",
+    "8",
     "9",
-    "0",
     {
       "c": "#cccccc"
     },
-    "_",
+    "SPC",
     {
       "g": true,
-      "f": 9
-    },
-    ":",
-    {
       "f": 5
     },
     "k"
   ],
   [
     {
-      "c": "#e1bee7",
-      "g": false,
       "f": 3
     },
     "Num lock",
     {
-      "c": "#cccccc",
+      "g": false,
       "f": 7
     },
-    "+\n\n\n\nWin",
+    "|\n\n\n\nWin",
     "-\n\n\n\nAlt",
-    "|\n\n\n\nCtrl",
+    "-\n\n\n\nCtrl",
     {
       "n": true
     },
@@ -141,13 +136,13 @@
       "f": 6,
       "n": true
     },
-    "5\n\n\n\nShift",
-    "6\n\n\n\nCtrl",
-    "7\n\n\n\nAlt",
+    "4\n\n\n\nShift",
+    "5\n\n\n\nCtrl",
+    "6\n\n\n\nAlt",
     {
       "f": 7
     },
-    "8\n\n\n\nWin",
+    "0\n\n\n\nWin",
     {
       "c": "#cccccc",
       "g": true,
@@ -165,34 +160,34 @@
       "g": false,
       "f": 7
     },
-    "/",
+    "[",
     {
       "t": "#000000"
     },
-    "*\n\n\n\nMouse",
-    "[\n\n\n\nSymbol",
+    "/\n\n\n\nMouse",
+    "*\n\n\n\nSymbol",
     "]",
     {
-      "g": true,
-      "f": 3
+      "c": "#FFCCBC"
     },
-    "Space",
+    "Esc",
     {
       "x": 5,
-      "f": 9
+      "f": 5
     },
-    "*",
+    "Enter",
     {
       "c": "#DCEDC8",
-      "g": false,
       "f": 6
     },
     "1",
     "2",
     "3\n\n\n\nAltGr",
-    "4",
     {
-      "c": "#cccccc",
+      "c": "#cccccc"
+    },
+    "_",
+    {
       "g": true,
       "f": 5
     },
@@ -252,17 +247,20 @@
   [
     {
       "x": 5,
-      "f": 3
-    },
-    "Alt-Tab\n\n\n\nCursor",
-    {
+      "c": "#fcde83",
       "g": false,
+      "f": 7
+    },
+    "L1\n\n\n\nCursor",
+    {
+      "c": "#cccccc",
+      "g": true,
+      "f": 3,
       "n": true
     },
     "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />",
     {
-      "t": "#EEEEEE",
-      "g": true
+      "t": "#EEEEEE"
     },
     "Unlock layer",
     {
@@ -271,15 +269,13 @@
       "f": 8
     },
     ",\n\n\n\nMouse",
-    {
-      "g": false
-    },
     "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nLight",
     {
-      "g": true,
-      "f": 3,
+      "c": "#fcde83",
+      "g": false,
+      "f": 7,
       "n": true
     },
-    "<img src=\"https://openclipart.org/download/278214/fingerprint.svg\" width=\"36\" height=\"36\" />\n\n\n\nNumber"
+    "L0\n\n\n\nNumber"
   ]
 ]
